@@ -18,7 +18,16 @@ def get_numbers():
             print("Invalid input please enter a number")
     return numbers
 
-  # to be implemented by Pream
+def add_numbers(numbers):
+    '''
+    Add all numbers in the list
+
+    Args:
+        numbers (list): List of numbers to add
+    Returns:
+        float: Sum of the numbers
+    '''
+    return sum(numbers)
 
 def main():
     # function to run the calculator
@@ -36,8 +45,14 @@ def main():
     print("\nWhat operation would you like to perform?")
     print("1. Add")
     print("2. Multiply")
+    choice = input("Enter choice (1 or 2): ").strip()
 
-    # to be added by Pream
+    if choice == '1':
+        result = add_numbers(numbers)
+        print(f"\nResult: {' + '.join(map(str, numbers))} = {result}")
+    else:
+        print("Invalid choice")
+   
 
 if __name__ == "__main__":
     main()
