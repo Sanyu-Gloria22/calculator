@@ -2,7 +2,7 @@
 Unit tests for the calculator functions
 """
 # import pytest 
-from calculator import get_numbers
+from calculator import get_numbers, add_numbers
 from unittest.mock import patch
 
 def test_add_numbers_positive():
