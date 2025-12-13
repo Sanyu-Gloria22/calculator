@@ -18,6 +18,7 @@ def get_numbers():
             print("Invalid input please enter a number")
     return numbers
 
+
 def add_numbers(numbers):
     '''
     Add all numbers in the list
@@ -28,6 +29,7 @@ def add_numbers(numbers):
         float: Sum of the numbers
     '''
     return sum(numbers)
+
 
 def main():
     # function to run the calculator
@@ -52,7 +54,7 @@ def main():
         print(f"\nResult: {' + '.join(map(str, numbers))} = {result}")
     else:
         print("Invalid choice")
-   
+
 
 if __name__ == "__main__":
     main()
